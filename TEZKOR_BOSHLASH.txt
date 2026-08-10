@@ -1,0 +1,118 @@
+🎮 SOXTA-HEROBRINE - TEZKOR BOSHLASH QOʻLLANMASI 👻
+
+1. JAVA 17+ OʻRNATISH
+   ═════════════════════════════════════════════════════════════════════
+   Windows: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+   Mac/Linux: java -version (tekshiring yoki brew install java17)
+
+2. MOD PAPKASINI TAYYORLASH
+   ═════════════════════════════════════════════════════════════════════
+   - soxta-herobrine papkasini o'zing xohlagan joyga qo'ying
+   - Terminal/CMD ni shu papkada ochang
+   
+3. COMPILE QILISH
+   ═════════════════════════════════════════════════════════════════════
+   Windows:   gradlew.bat build
+   Mac/Linux: ./gradlew build
+   
+   ⏳ Kuting... 5-10 daqiqa. Birinchi marta uzoq vaqt oladi.
+   
+4. JAR FAYLNI TOPISH
+   ═════════════════════════════════════════════════════════════════════
+   build/libs/soxta-herobrine-1.0.0.jar
+   
+5. MINECRAFT MODSGA QOʻYISH
+   ═════════════════════════════════════════════════════════════════════
+   Windows:   %APPDATA%\.minecraft\mods\
+   Mac:       ~/Library/Application Support/minecraft/mods/
+   Linux:     ~/.minecraft/mods/
+   
+   JAR faylni shunga qoʻying!
+   
+6. MINECRAFT ISHGA TUSHIRISH
+   ═════════════════════════════════════════════════════════════════════
+   - Launcher ochang
+   - Fabric 1.21.1 profili tanlang
+   - Play boshing
+   
+7. OʻYIN OʻYNANG
+   ═════════════════════════════════════════════════════════════════════
+   - 15-30 soniya oʻynang
+   - Herobrine paydo boʻladi!
+   - Faqat siz koʻrasiz 👀
+   - Boshqalarga koʻrinmaydi ✓
+   
+═════════════════════════════════════════════════════════════════════════════
+
+📁 FAYL STRUKTURASI:
+
+soxta-herobrine/
+├── src/main/java/com/soxta/herobrine/
+│   ├── SoxtaHerobrineClient.java      ← MOD KIRISH NUQTASI
+│   ├── HerobrineEntity.java           ← HEROBRINE ENTITY
+│   ├── HerobrineRenderer.java         ← RENDER (SURATI)
+│   ├── HerobrineManager.java          ← SPAWN VA BOSHQARISH
+│   └── mixin/ClientTickMixin.java     ← MIXIN (ADVANCED)
+│
+├── src/main/resources/
+│   ├── fabric.mod.json                ← MOD INFO
+│   ├── soxta_herobrine.mixins.json    ← MIXIN CONFIG
+│   └── assets/soxta_herobrine/textures/entity/
+│       └── herobrine.png              ← TEXTURE (QOʻYISH KERAK!)
+│
+├── build.gradle                       ← BUILD CONFIG
+├── gradle.properties                  ← VERSIYALAR
+├── settings.gradle                    ← SETTINGS
+│
+├── README.md                          ← ASOSIY INFO
+├── SETUP.md                           ← TEXSHIRIB COMPILE QILISH
+├── OʻZGARTIRISHLAR.md                ← MODDNI TAHRIRLASH
+├── TEZKOR_BOSHLASH.txt               ← BU FAYL
+└── .gitignore                         ← GIT CONFIG
+
+═════════════════════════════════════════════════════════════════════════════
+
+❓ SAVOLLAR:
+
+S: Boshqalar moddni koʻra oladilarmi?
+J: YO'Q! Faqat CLIENT-SIDE. Server multiplayer-da hech kimga koʻrinmaydi.
+
+S: Crash boʻlsa?
+J: 1) Java 17+ koʻra tekshiring
+   2) Texture faylini qoʻyganingizni tekshiring
+   3) Fabric Loader o'rnatilganini tekshiring
+
+S: Herobrine sekinroq boʻlsin?
+J: OʻZGARTIRISHLAR.md ni oʻqing. "speed" qiymatini o'zgartiring.
+
+S: Har qancha vaqt oʻyingda tursin?
+J: HerobrineManager.java da "scareMeter > 400" ni o'zgartiring.
+
+═════════════════════════════════════════════════════════════════════════════
+
+🔧 AGAR COMPILE BOʻLMAYSA:
+
+1. Java 17+ oʻrnatilganini tekshiring:
+   java -version
+   
+2. Gradle cache ni oʻchirib qayta qoʻying:
+   rm -rf .gradle/
+   ./gradlew clean build
+   
+3. JDK path ni tekshiring (agar kerak bo'lsa)
+
+═════════════════════════════════════════════════════════════════════════════
+
+📚 QOʻSHIMCHA FILES:
+
+README.md          - Mod nima qilishini tushuntiradi
+SETUP.md           - Kompilatsiya va o'rnatish
+OʻZGARTIRISHLAR.md - Moddni oʻzgartirish
+
+═════════════════════════════════════════════════════════════════════════════
+
+🚀 BUGUNDAN BOSHLANG!
+
+Herobrine sizi kutishda... 👻
+
+Omadli bo'ling! 🎮

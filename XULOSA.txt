@@ -1,0 +1,206 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    ✨ SOXTA-HEROBRINE MOD XULOSA ✨
+═══════════════════════════════════════════════════════════════════════════════
+
+MOD NOMI:        Soxta-Herobrine
+VERSIYA:         1.0.0
+MINECRAFT:       1.21.1
+LOADER:          Fabric
+JAVA:            17+
+TUR:             Client-side ONLY (Faqat sizning renderingiz!)
+
+═══════════════════════════════════════════════════════════════════════════════
+                              📁 FAYL RO'YXATI
+═══════════════════════════════════════════════════════════════════════════════
+
+📦 MOD KODI (Java Source):
+├── SoxtaHerobrineClient.java          - MOD ENTRY POINT (Kirish)
+├── HerobrineEntity.java               - Herobrine entity class
+├── HerobrineRenderer.java             - Render engine (suratini chizish)
+├── HerobrineManager.java              - Spawn, positioning, behavior
+└── mixin/ClientTickMixin.java         - Mixin (advanced)
+
+⚙️ KONFIGURATSIYA:
+├── fabric.mod.json                    - Mod metadata
+├── soxta_herobrine.mixins.json        - Mixin configuration
+├── build.gradle                       - Gradle build script
+├── gradle.properties                  - Versions & properties
+└── settings.gradle                    - Gradle settings
+
+📚 QOʻLLANMALAR:
+├── README.md                          - English/Uzbek intro
+├── SETUP.md                           - Compile & install guide
+├── OʻZGARTIRISHLAR.md                - Customization guide (Uzbek)
+├── TEXTURE_QOʻSHISH.md               - Texture instructions (Uzbek)
+├── TEZKOR_BOSHLASH.txt               - Quick start (Uzbek)
+└── XULOSA.txt                         - This file!
+
+🎨 ASSETS (Textures):
+└── assets/soxta_herobrine/textures/entity/
+    └── herobrine.png                  - ⚠️ KELTIRILMAGAN (siz qoʻyishingiz kerak)
+
+═══════════════════════════════════════════════════════════════════════════════
+                            🚀 TEZKOR BOSHLASH
+═══════════════════════════════════════════════════════════════════════════════
+
+1. TEZKOR_BOSHLASH.txt faylini oʻqing
+
+2. Java 17+ oʻrnatilganini tekshiring:
+   java -version
+
+3. Compile qiling:
+   Windows:   gradlew.bat build
+   Mac/Linux: ./gradlew build
+
+4. JAR faylni topik:
+   build/libs/soxta-herobrine-1.0.0.jar
+
+5. Minecraft mods folderiga qoʻying:
+   Windows:   %APPDATA%\.minecraft\mods\
+   Mac:       ~/Library/Application Support/minecraft/mods/
+   Linux:     ~/.minecraft/mods/
+
+6. Minecraft ishga tushiring!
+
+═══════════════════════════════════════════════════════════════════════════════
+                          👻 MOD FEATURES (XUSUSIYATLARI)
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Random Spawn          - Istalgan vaqtda paydo bo'ladi
+✓ Scary Chase          - Ortingizdan kuzatib yuradi
+✓ Teleportation        - Kutilmaganda bo'lishi mumkin
+✓ Client-Side Only     - Faqat siz koʻrasiz
+✓ Server Safe          - Serverga hech qanday ta'sir emas
+✓ Multiplayer Safe     - Boshqalarga koʻrinmaydi
+✓ Customizable         - Tezlikni, chastotani, waqtni o'zgartirish mumkin
+✓ No Harm             - Faqat scare simulator, hech qanday damage emas
+
+═══════════════════════════════════════════════════════════════════════════════
+                         📖 FAYLLAR TAFSILOTI
+═══════════════════════════════════════════════════════════════════════════════
+
+ASOSIY KODLAR:
+
+1. SoxtaHerobrineClient.java
+   - Mod ni initialize qiladi
+   - Herobrine entity turini registratsiya qiladi
+   - Renderer ni registratsiya qiladi
+   - Client tick events ni setup qiladi
+
+2. HerobrineEntity.java
+   - Herobrine sifatida ishlovchi entity
+   - LivingEntity ni extend qiladi
+   - Physics va rendering uchun attributes
+
+3. HerobrineRenderer.java
+   - Herobrine ni suratda chizadi
+   - Scary light effects qoʻshadi
+   - Texture ni apply qiladi
+   - White glow eyes effect
+
+4. HerobrineManager.java
+   - Herobrine lifecycle boshqaradi
+   - Spawn location va timing
+   - Chase behavior
+   - Teleportation logic
+   - Lifetime va removal
+
+KONFIGURATSIYA FAYLLAR:
+
+- fabric.mod.json      → Mod metadata (nom, version, dependencies)
+- mixins JSON          → Mixin configuration (advanced hooks)
+- build.gradle         → Gradle build configuration
+- gradle.properties    → Versions (Minecraft 1.21.1, Fabric, Java)
+- settings.gradle      → Plugin repositories
+
+═══════════════════════════════════════════════════════════════════════════════
+                       🔧 CUSTOMIZE QILISH (TAHRIRLASH)
+═══════════════════════════════════════════════════════════════════════════════
+
+O'zgartirishlar uchun OʻZGARTIRISHLAR.md ni oʻqing!
+
+Eng ko'p o'zgartiriladi:
+- Spawn chastotasi        (qancha tez paydo bo'ladi)
+- Chase speed            (qancha tez kuzatadi)
+- Teleport frequency     (qancha tez teleport qiladi)
+- Lifetime              (qancha vaqt yashaydi)
+- Spawn distance        (qanday malumotdan paydo bo'ladi)
+
+═══════════════════════════════════════════════════════════════════════════════
+                       ❓ SAVOLLAR VA JAVOBLAR
+═══════════════════════════════════════════════════════════════════════════════
+
+S: Boshqalar moddni koʻra oladilarmi multiplayer-da?
+J: YO'Q! Bu client-side mod. Faqat sizning kompyuteringizda ishlaydi.
+
+S: Server owner o'yinchini ban qiladi?
+J: YO'Q! Server hech narsani koʻrmaydi. Faqat sizga koʻrinadi.
+
+S: Herobrine real damage berasimi?
+J: YO'Q! Faqat scare simulator. Hech qanday actual damage.
+
+S: Moddni o'chirib tashlay olamizmi?
+J: HA! Mods folderidan .jar faylni olib tashlang.
+
+S: Birdan koʻp Herobrine bo'lishi mumkinmi?
+J: Hozirda yo'q, lekin tahrirlash mumkin!
+
+S: Linux/Mac da ishlaydi?
+J: HA! Fabric 1.21.1 bilan ishlaydi.
+
+═══════════════════════════════════════════════════════════════════════════════
+                         ⚠️ XATOLAR VA YECHIMLAR
+═══════════════════════════════════════════════════════════════════════════════
+
+XATO: "ClassNotFoundException"
+YECHIM: Java import qismini tekshiring, compile qiling
+
+XATO: "Mod yuklanmadi"
+YECHIM: Fabric 1.21.1 o'rnatilganini tekshiring
+
+XATO: "Herobrine koʻrinmaydi"
+YECHIM: Texture faylini qoʻyganingizni tekshiring
+
+XATO: "Crash boʻldi"
+YECHIM: Java 17+ o'rnatilganini tekshiring
+
+═══════════════════════════════════════════════════════════════════════════════
+                            🎯 KEYINGI BOSQICHLAR
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Compile qiling
+2. Minecraft modsga qoʻying
+3. OʻYIN OʻYNANG va Herobrine ni kutib qoling!
+4. Scary bo'lsa, OʻZGARTIRISHLAR.md dan foydalanib customize qiling
+
+═══════════════════════════════════════════════════════════════════════════════
+                          📞 MUAMMOLAR VA YECHIMLAR
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Compile xatolar:
+   → ./gradlew clean build
+   → Java 17+ tekshiring
+
+2. Mod yuklanmadi:
+   → Fabric Loader o'rnatilganini tekshiring
+   → JAR faylini mods folderiga qoying
+
+3. Herobrine koʻrinmaydi:
+   → Texture qo'yganingizni tekshiring
+   → build/libs/ da JAR ni qoʻyganingizni tekshiring
+
+═══════════════════════════════════════════════════════════════════════════════
+                              📝 NOTES
+═══════════════════════════════════════════════════════════════════════════════
+
+• Mod client-side only - server-ga hech ta'sir emas
+• Faqat sizga koʻrinadi - boshqalarga invisible
+• Texture yan istalgan scary skin bo'lishi mumkin
+• Multiplayer-da safe - server admin tomonidan blocked emas
+• Fully customizable - istalgan parametrni o'zgartirishingiz mumkin
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    Moddan zavq oling! Herobrine sizni kutadi... 👻
+
+═══════════════════════════════════════════════════════════════════════════════

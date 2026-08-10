@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "soxta_herobrine",
+  "version": "1.0.0",
+  "name": "Soxta-Herobrine",
+  "description": "Client-side Herobrine scare mod - faqat sizning renderingizda!",
+  "authors": ["Soxta Developer"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.soxta.herobrine.SoxtaHerobrineClient"
+    ]
+  },
+  "mixins": [
+    "soxta_herobrine.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.21.1",
+    "java": ">=17"
+  }
+}
