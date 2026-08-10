@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.soxta.herobrine.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ClientTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
